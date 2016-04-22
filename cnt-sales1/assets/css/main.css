@@ -83,6 +83,10 @@ margin-left: -15px;
 .modal-header {
 	background: #3498db;
 }
+.modal-paragraph {
+    padding: none;
+    margin: none;
+}
 
 .modal-header h4 {
 	color: white;
