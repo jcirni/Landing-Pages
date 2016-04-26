@@ -21,7 +21,10 @@
     
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    
+   
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/contact_form.js"></script>
     <script src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
     
@@ -49,11 +52,10 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="#home" class="smoothScroll">Home</a></li>
+			<li> <a href="#applications" class="smoothScroll"> Applications</a></li>
+			<li> <a href="#specs" class="smoothScroll"> Specs</a></li>
 			<li> <a href="#about" class="smoothScroll"> About</a></li>
-			<li> <a href="#services" class="smoothScroll"> Services</a></li>
-			<li> <a href="#team" class="smoothScroll"> Team</a></li>
-			<li> <a href="#portfolio" class="smoothScroll"> Portfolio</a></li>
-			<li> <a href="#blog" class="smoothScroll"> Blog</a></li>
+			<li> <a href="http://www.fastcapsystems.com/blog/" target="_blank"> Blog</a></li>
 			<li> <a href="#contact" class="smoothScroll"> Contact</a></li>
         </div><!--/.nav-collapse -->
       </div>
@@ -95,7 +97,7 @@
 		</div><!-- greywrap -->
 
         <!-- ==== Applications ==== -->
-		<div class="container" id="portfolio" name="portfolio">
+		<div class="container" id="applications" name="applications">
 		<br>
 			<div class="row">
 				<br>
@@ -180,13 +182,38 @@
 				</div><!-- /col -->
 			</div><!-- /row -->
 	</div><!-- /container -->  		
-		
+   
+
+        <div class="row">
+             <h2>Contact us to learn more about our Nanomaterials!</h2>
+            <div class="col-sm-6 ">
+            <div id="mainform">
+                <!-- Required Div Starts Here -->
+                <form id="form">
+                    <p id="returnmessage"></p>
+                    <label>Name: <span>*</span></label>
+                    <input type="text" id="name" placeholder="Name"/>
+                    <label>Email: <span>*</span></label>
+                    <input type="text" id="email" placeholder="Email"/>
+                    <label>Message:</label>
+                    <textarea id="message" placeholder="Message......."></textarea>
+                    <input type="button" id="submit" value="Send Message"/>
+                </form>
+                </div>
+            </div>
+            <div class="col-sm-6 vcenter">
+                <p><b><a href="http://www.fastcapsystems.com/products/vacnt/"  target="_blank">Visit our site to learn more!</a></b></p>
+
+            </div>
+        </div>
+                
+ 
       <!-- ==== PORTFOLIO ==== -->
-		<div class="container" id="portfolio" name="portfolio">
+		<div class="container" id="specs" name="specs">
 		<br>
 			<div class="row">
 				<br>
-				<h1 class="centered">Characterization</h1>
+				<h1 class="centered">Product Specs</h1>
 				<hr>
 				<br>
 				<br>
@@ -228,7 +255,9 @@
                                      </ul>
                                     <span>Configuration:</span>
                                      <ul> 
-                                          <li>>one wall per tubeDiameter: inside: 1-5 nm outside: 1-5 nm</li>
+                                          <li>One wall per tube outside: 1-5 nm</li>
+                                          <li>Inside Diameter 1-5 nm</li>
+                                          <li>Outside Diameter: 1-5 nm</li>
                                     </ul>      
 						          <p><b><a href="http://www.fastcapsystems.com/products/vacnt/" target="_blank">Visit Site</a></b></p>
 						        </div>
@@ -244,7 +273,7 @@
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/doublewnt.jpg" alt="">
+							<img class="img-responsive" src="assets/img/portfolio/doublewnt1.jpg" alt="">
 							<figcaption>
 								<h5>DW-VACNT</h5>
 								<a data-toggle="modal" href="#myModal2" class="btn btn-primary btn-lg">Take a Look</a>
@@ -261,8 +290,19 @@
 						          <h4 class="modal-title">DW-VACNT</h4>
 						        </div>
 						        <div class="modal-body">
-						          <p><img class="img-responsive" src="assets/img/portfolio/doublewnt.jpg" alt=""></p>
-						          <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
+						          <p><img class="img-responsive" src="assets/img/portfolio/doublewnt1.jpg" alt=""></p>
+						          <span>Composition:</span>
+                                  <ul>
+                                      <li>>99% carbon; </li>
+                                      <li>Of carbon content, >95% CNT;</li>
+                                      <li>of the CNTs, >40% are DWNT</li>
+                                  </ul>
+                                    <span>Configuration:</span>
+                                  <ul> 
+                                      <li>Two walls per tube outside: 1-5 nm</li>
+                                      <li>Inside Diameter 1-5 nm</li>
+                                      <li>Outside Diameter: 4-6 nm</li>
+                                  </ul> 
 						          <p><b><a href="http://www.fastcapsystems.com/products/vacnt/" target="_blank">Visit Site</a></b></p>
 						        </div>
 						        <div class="modal-footer">
@@ -295,7 +335,18 @@
 						        </div>
 						        <div class="modal-body">
 						          <p><img class="img-responsive" src="assets/img/portfolio/multiwnt.jpg" alt=""></p>
-						          <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
+						           <span>Composition:</span>
+                                  <ul>
+                                      <li>>99% carbon; </li>
+                                      <li>Of carbon content, >90% CNT;</li>
+                                      <li>of the CNTs, >99% are DWNT</li>
+                                  </ul>
+                                    <span>Configuration:</span>
+                                  <ul> 
+                                      <li>Predominantly 3-50 walls</li>
+                                      <li>Inside Diameter 1-10 nm</li>
+                                      <li>Outside Diameter: 10-50 nm</li>
+                                  </ul> 
 						          <p><b><a href="http://www.fastcapsystems.com/products/vacnt/" target="_blank">Visit Site</a></b></p>
 						        </div>
 						        <div class="modal-footer">
@@ -308,21 +359,26 @@
         </div>
         
         <!-- ==== ABOUT ==== -->
-    <div id="greywrap">
-		<div class="container" id="about" name="about">
-			<br>
-				<h1 class="centered">More About FastCAP Systems</h1>
+    
+    <div id="about" name="about">
+        <div id="greywrap">
+		<div class="container">
+				<h1 class="centered">More About FastCAP Carbon Nanotubes</h1>
 				<hr>
-				
 				<div class="col-lg-6">
-					<p>Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. </p>
+					<p class="inline">The CVD process tends to produce a much cleaner material compared to bulk powder manufacturing. Often there is substantial metal content mixed in with bulk powders from the catalyst, and they require additional processing to remove the contaminant. With FastCAP’s CVD method, virtually all the metal catalyst remains adhered to the substrate when the VA-CNTs are removed for use. 
+                    </p>
 				</div><!-- col-lg-6 -->
 				
 				<div class="col-lg-6">
-					<p>Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum. Lorem ipsum inum.</p>
+					<p class="inline">The growth method is also more finely controlled than most alternatives, so the proportion of carbon that has formed nanotubes instead of other amorphous carbon structures tends to be much higher.
+                    </p>
+                    <p class="inline">FastCAP verifies the quality of their VA-CNTs with Raman Spectroscopy; TEM and SEM imaging; and Thermo Gravimetric Analysis. 
+                    </p>
 				</div><!-- col-lg-6 -->
 		</div><!-- container -->
-   </div>
+        </div>
+    </div>
         
 		<div class="container" id="contact" name="contact">
 			<div class="row">
@@ -338,7 +394,7 @@
 						<span class="icon icon-phone"></span> (857) 239-7500 <br/>
 						<span class="icon icon-envelop"></span> <a href="#">contact@fastcapsystems.com</a> <br/>
 						<span class="icon icon-twitter"></span> <a href="https://twitter.com/fastcapsystems" target="_blank"> @FastCAPSystems </a> <br/>
-						<span class="icon icon-facebook"></span> <a href="https://www.facebook.com/FastCAPSystemsCorp/" target="_blank"> FastCAP Systems</a> <br/>
+						<span class="icon icon-facebook"></span> <a href="https://www.facebook.com/FastCAPSystemsCorp/" target="_blank"> FastCAPSystemsCorp</a> <br/>
 					</p>
 				</div><!-- col -->
 				
@@ -361,7 +417,7 @@
 						  </div>
 						  <div class="form-group">
 						    <div class="col-lg-10">
-						      <button type="submit" class="btn btn-success">Sign in</button>
+						      <button type="submit" class="btn btn-success">Sign up</button>
 						    </div>
 						  </div>
 					   </form><!-- form -->
@@ -374,7 +430,7 @@
 
 		<div id="footerwrap">
 			<div class="container">
-				<h4><a href="www.fastcapsystems.com">FastCAP Systems</a> - Copyright 2016</h4>
+				<h4><a href="http://www.fastcapsystems.com">FastCAP Systems</a> - Copyright 2016</h4>
 			</div>
 		</div>
 
